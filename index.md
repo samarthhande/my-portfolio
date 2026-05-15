@@ -5,7 +5,7 @@ hide: true
 show_reading_time: false
 ---
 
-Hi! My name is [Your Full Name]
+Hi! My name is Samarth Hande.
 
 ### Development Environment
 
@@ -81,5 +81,47 @@ Hi! My name is [Your Full Name]
        CS Pathway
     </a>
 </div>
+
+<br>
+
+### CS111 Requirements
+
+
+<a href="{{site.baseurl}}/blogs/cs111"
+   style="
+      text-decoration: none;
+      display: flex;
+      width: 1350px;
+      max-width: 95%;
+      height: 170px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: white;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      transition: all 0.25s ease;
+      font-family: sans-serif;
+   "
+   onmouseover="
+      this.style.transform='translateY(-6px) scale(1.02)';
+      this.style.boxShadow='0 18px 40px rgba(0,0,0,0.35)';
+      this.style.filter='brightness(1.08)';
+   "
+   onmouseout="
+      this.style.transform='translateY(0) scale(1)';
+      this.style.boxShadow='0 10px 25px rgba(0,0,0,0.25)';
+      this.style.filter='brightness(1)';
+   "
+   target="_blank">
+    <span style="width:100%; text-align:center;">
+        View CS111 Requirements
+    </span>
+</a>
 
 <br>
