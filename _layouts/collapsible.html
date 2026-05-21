@@ -1,0 +1,524 @@
+---
+layout: opencs
+---
+
+<style>
+
+/* =========================
+   COLLAPSIBLE SECTION STYLE
+========================= */
+
+h3.collapsible {
+    cursor: pointer;
+    padding: 14px 18px;
+    margin-top: 24px;
+    margin-bottom: 0;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(31,41,55,0.95),
+            rgba(17,24,39,0.98)
+        );
+
+    color: #f9fafb;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    user-select: none;
+
+    transition:
+        background 0.25s ease,
+        transform 0.2s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+
+    box-shadow:
+        0 4px 14px rgba(0,0,0,0.35);
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* subtle glow bar */
+h3.collapsible::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        #60a5fa,
+        #3b82f6
+    );
+}
+
+/* arrow */
+h3.collapsible::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 12px;
+    color: #60a5fa;
+    transition: transform 0.25s ease;
+    font-size: 0.9em;
+}
+
+h3.collapsible.open::before {
+    transform: rotate(90deg);
+}
+
+h3.collapsible:hover {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(55,65,81,0.98),
+            rgba(31,41,55,1)
+        );
+
+    border-color: #4b5563;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 24px rgba(0,0,0,0.45);
+}
+
+/* =========================
+   CONTENT PANEL
+========================= */
+
+.collapsible-content {
+
+    padding: 22px 24px;
+    margin-bottom: 18px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(15,23,42,0.98),
+            rgba(2,6,23,1)
+        );
+
+    border:
+        1px solid rgba(59,130,246,0.18);
+
+    border-top: none;
+
+    border-radius:
+        0 0 14px 14px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.03),
+        0 6px 18px rgba(0,0,0,0.35);
+
+    animation: fadeIn 0.25s ease;
+}
+
+/* smoother open */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   BUTTON ROW
+========================= */
+
+.button-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   LOCAL BUTTONS
+========================= */
+
+.collapse-button,
+.back-button,
+.global-btn {
+
+    padding: 10px 16px;
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 0.95rem;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+
+    color: white;
+}
+
+/* collapse */
+.collapse-button {
+    background: linear-gradient(
+        135deg,
+        #1d4ed8,
+        #2563eb
+    );
+
+    box-shadow:
+        0 4px 12px rgba(37,99,235,0.35);
+}
+
+.collapse-button:hover {
+    transform: translateY(-1px);
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #3b82f6
+    );
+}
+
+/* back */
+.back-button {
+    background: linear-gradient(
+        135deg,
+        #374151,
+        #4b5563
+    );
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.25);
+}
+
+.back-button:hover {
+    transform: translateY(-1px);
+
+    background: linear-gradient(
+        135deg,
+        #4b5563,
+        #6b7280
+    );
+}
+
+/* =========================
+   GLOBAL CONTROLS
+========================= */
+
+.collapsible-controls {
+    display: flex;
+    gap: 14px;
+    margin: 22px 0 28px;
+    flex-wrap: wrap;
+}
+
+.expand-all-btn {
+
+    background: linear-gradient(
+        135deg,
+        #059669,
+        #10b981
+    );
+
+    box-shadow:
+        0 4px 14px rgba(16,185,129,0.3);
+}
+
+.expand-all-btn:hover {
+    transform: translateY(-1px);
+
+    background: linear-gradient(
+        135deg,
+        #10b981,
+        #34d399
+    );
+}
+
+.collapse-all-btn {
+
+    background: linear-gradient(
+        135deg,
+        #b91c1c,
+        #dc2626
+    );
+
+    box-shadow:
+        0 4px 14px rgba(220,38,38,0.28);
+}
+
+.collapse-all-btn:hover {
+    transform: translateY(-1px);
+
+    background: linear-gradient(
+        135deg,
+        #dc2626,
+        #ef4444
+    );
+}
+
+/* =========================
+   MOBILE IMPROVEMENTS
+========================= */
+
+@media (max-width: 640px) {
+
+    h3.collapsible {
+        padding: 13px 15px;
+        font-size: 1rem;
+    }
+
+    .collapsible-content {
+        padding: 18px;
+    }
+
+    .button-row,
+    .collapsible-controls {
+        flex-direction: column;
+    }
+
+    .collapse-button,
+    .back-button,
+    .global-btn {
+        width: 100%;
+    }
+}
+
+</style>
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const headings = document.querySelectorAll("h3");
+
+    const RETURN_H2_TEXT = "CS111 Requirements";
+
+    const sections = [];
+
+    function openSection(h3, content) {
+        content.style.display = "block";
+        h3.classList.add("open");
+    }
+
+    function closeSection(h3, content) {
+        content.style.display = "none";
+        h3.classList.remove("open");
+    }
+
+    function scrollToReturnSection() {
+
+        const h2s = document.querySelectorAll("h2");
+
+        for (const h2 of h2s) {
+
+            if (h2.textContent.trim() === RETURN_H2_TEXT) {
+
+                h2.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+                break;
+            }
+        }
+    }
+
+    headings.forEach(h3 => {
+
+        h3.classList.add("collapsible");
+
+        const content = document.createElement("div");
+        content.classList.add("collapsible-content");
+
+        let sibling = h3.nextElementSibling;
+
+        while (
+            sibling &&
+            sibling.tagName !== "H3" &&
+            sibling.tagName !== "H2"
+        ) {
+
+            const next = sibling.nextElementSibling;
+
+            content.appendChild(sibling);
+
+            sibling = next;
+        }
+
+        // =========================
+        // BUTTONS
+        // =========================
+
+        const buttonRow = document.createElement("div");
+        buttonRow.classList.add("button-row");
+
+        // Collapse button
+        const collapseBtn = document.createElement("button");
+
+        collapseBtn.innerText = "Collapse";
+        collapseBtn.classList.add("collapse-button");
+
+        collapseBtn.addEventListener("click", () => {
+
+            closeSection(h3, content);
+
+            h3.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        });
+
+        // Back button
+        const backBtn = document.createElement("button");
+
+        backBtn.innerText = "Collapse and Go Back";
+        backBtn.classList.add("back-button");
+
+        backBtn.addEventListener("click", () => {
+
+            closeSection(h3, content);
+
+            setTimeout(() => {
+                scrollToReturnSection();
+            }, 150);
+        });
+
+        buttonRow.appendChild(collapseBtn);
+        buttonRow.appendChild(backBtn);
+
+        content.appendChild(buttonRow);
+
+        h3.parentNode.insertBefore(content, sibling);
+
+        // Start collapsed
+        closeSection(h3, content);
+
+        // Toggle on click
+        h3.addEventListener("click", () => {
+
+            const isOpen = content.style.display === "block";
+
+            if (isOpen) {
+                closeSection(h3, content);
+            } else {
+                openSection(h3, content);
+            }
+        });
+
+        sections.push({
+            h3,
+            content
+        });
+
+        // Auto-open from hash
+        if (window.location.hash) {
+
+            const targetId = window.location.hash.substring(1);
+
+            if (h3.id === targetId) {
+
+                openSection(h3, content);
+
+                setTimeout(() => {
+
+                    h3.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+
+                }, 100);
+            }
+        }
+    });
+
+    // =========================
+    // HASH CHANGE SUPPORT
+    // =========================
+
+    window.addEventListener("hashchange", () => {
+
+        const targetId = window.location.hash.substring(1);
+
+        sections.forEach(section => {
+
+            if (section.h3.id === targetId) {
+
+                openSection(
+                    section.h3,
+                    section.content
+                );
+
+                setTimeout(() => {
+
+                    section.h3.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+
+                }, 100);
+            }
+        });
+    });
+
+    // =========================
+    // GLOBAL BUTTONS
+    // =========================
+
+    const expandAllBtn =
+        document.getElementById("expandAllBtn");
+
+    const collapseAllBtn =
+        document.getElementById("collapseAllBtn");
+
+    if (expandAllBtn) {
+
+        expandAllBtn.addEventListener("click", () => {
+
+            sections.forEach(section => {
+                openSection(
+                    section.h3,
+                    section.content
+                );
+            });
+        });
+    }
+
+    if (collapseAllBtn) {
+
+        collapseAllBtn.addEventListener("click", () => {
+
+            sections.forEach(section => {
+                closeSection(
+                    section.h3,
+                    section.content
+                );
+            });
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
+});
+
+</script>
+
+<!-- GLOBAL ACTION BUTTONS -->
+<div class="collapsible-controls">
+    <button id="expandAllBtn" class="global-btn expand-all-btn">
+        Expand All
+    </button>
+
+    <button id="collapseAllBtn" class="global-btn collapse-all-btn">
+        Collapse All
+    </button>
+</div>
+
+{{content}}
