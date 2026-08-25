@@ -107,6 +107,7 @@ Here are places associated with me.
 ### Culture, Family, and Fun
 
 - I have 4 members of my family, including...
+  - me
   - both my parents
   - my younger brother (12 years old)
 
