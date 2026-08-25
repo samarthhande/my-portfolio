@@ -99,16 +99,16 @@ Flags are made using Wikipedia images
 
 Here are places associated with me.
 
+- 🇳🇯 Born in New Jersey, USA
 - 🏫 Stone Ranch Elementary School (San Diego, CA)
 - 🏫 Oak Valley Middle School (San Diego, CA)
 - 🎓 Del Norte High School (San Diego, CA)
 
 ### Culture, Family, and Fun
 
-- I have 4 members of my family
-  - I have 1 younger brother (11yrs)
-  - I have a mom
-  - I have a dad
+- I have 4 members of my family, including...
+  - both my parents
+  - my younger brother (12 years old)
 
 <!-- Add further detail in the above section later -->
 
