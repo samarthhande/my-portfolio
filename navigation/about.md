@@ -102,7 +102,7 @@ Here are places associated with me.
 - 🇳🇯 Born in New Jersey, USA
 - 🏫 Stone Ranch Elementary School (San Diego, CA)
 - 🏫 Oak Valley Middle School (San Diego, CA)
-- 🎓 Del Norte High School (San Diego, CA)
+- 🎓 Currently Enrolled in Del Norte High School (San Diego, CA)
 
 ### Culture, Family, and Fun
 
@@ -111,7 +111,10 @@ Here are places associated with me.
   - both my parents
   - my younger brother (12 years old)
 
-<!-- Add further detail in the above section later -->
+- My hobbies are...
+  - 💻 Computer Science
+  - 📚 Reading
+  - 🚶 Walking Outside
 
 <comment>
 Gallery of Pics, scroll to the right for more ...
