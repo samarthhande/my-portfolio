@@ -117,5 +117,9 @@ Here are places associated with me.
   - 🚶 Walking Outside
 
 <comment>
-Gallery of Pics, scroll to the right for more ...
+Theese are images of all of the schools I've attended!
 </comment>
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
