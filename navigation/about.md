@@ -120,6 +120,8 @@ Here are places associated with me.
 Theese are images of all of the schools I've attended!
 </comment>
 
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
+![Stone Ranch Elementary School](image.png)
+![Oak Valley Middle School](image-1.png)
+![Del Norte High School](image-2.png)
+![Me, on a trip in Yosemitie National Park](<Samarth Hande.jpg>)
+![Me at the N@tM event](image-3.png)
