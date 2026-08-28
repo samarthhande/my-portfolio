@@ -111,7 +111,7 @@ Here are places associated with me.
   - both my parents
   - my younger brother (12 years old)
 
-- My hobbies are...
+- My hobbies and intrests are...
   - 💻 Computer Science
   - 📚 Reading
   - 🚶 Walking Outside
