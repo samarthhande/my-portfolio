@@ -123,6 +123,7 @@ Theese are images of all of the schools I've attended!
 ![Stone Ranch Elementary School](https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmzRWWsd3fifOLsO-irWu4CmpvNkxkeODp2PNkrXpdL-V8OcunCD_LBJd0rGVaH9N8CzNAJnD6CGWFZGQ6Q6EEK1dZ5syr94Ogm99Ey9sdIV-vtgibS-CQBdAIx-kKypOJexGA=s1360-w1360-h1020-rw)
 ![Oak Valley Middle School](https://d3id26kdqbehod.cloudfront.net/POWUSD-OAVMS/2023/06/07/2ZwQHgwPILwfGn8wjnzh2Pa4GeKIGQRC1BzuNfXOZskSgwa3WL5OEjn1BvPL/OVMS-Welcome-480THUMB.0000001.jpg)
 ![Me!](https://lh3.googleusercontent.com/sitesv/AG8ngQW-ohkYUES0TfioKyOUQZ8w12E9ON_obEM3sB2Y6HTCphCuCDxO0CaQux-sw2TGd84-SVgqZ5z785U9A6_T04fZHcee9-NpeEpjXyD46Ihs6o_VsO0DJO0piyzbUPiyMwr6rvtY8PUa4dpwS2KUKufY2LFfUdZRJFZOJnRHZjaOFskRdt3H1bkRriB7yVH9j7uslJ1mihbDHSNpOPSkh-WxE3hEUBV323_hWUTXAB0=w1280)
+![Me at cyber nats](https://www.sandiegouniontribune.com/wp-content/uploads/2025/04/PRN-L-CyberAegis-Odyssey.jpg?fit=1280%2C9999px&ssl=1)
 <!-- ![Del Norte High School](image-2.png)
 ![Me, on a trip in Yosemitie National Park](<Samarth Hande.jpg>)
 ![Me at the N@tM event](image-3.png) -->
