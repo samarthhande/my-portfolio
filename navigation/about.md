@@ -117,7 +117,7 @@ Here are places associated with me.
   - 🚶 Walking Outside
 
 <comment>
-Theese are images of all of the schools I've attended!
+Theese are images of all of the schools I've graduated from, and more images of me!
 </comment>
 
 <div class="image-gallery">
