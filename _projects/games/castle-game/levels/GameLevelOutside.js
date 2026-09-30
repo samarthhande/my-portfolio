@@ -1,7 +1,7 @@
 
 import GameEnvBackground from '@assets/js/GameEnginev1.1/essentials/GameEnvBackground.js';
 import Player from '@assets/js/GameEnginev1.1/essentials/Player.js';
-import StrictNpc from './StrictNpc.js';
+import Npc from '@assets/js/GameEnginev1.1/essentials/Npc.js';
 import AiNpc from '@assets/js/GameEnginev1.1/essentials/AiNpc.js';
 import GameLevelArchery from './GameLevelArchery.js';
 import SpriteSheetCoin from './SpriteSheetCoin.js';
@@ -146,6 +146,7 @@ class GameLevelOutside {
             ANIMATION_RATE: 40,
             pixels: { height: 864, width: 468 },
             INIT_POSITION: { x: 1259/1667 * width, y: 430/1137 * height },    
+            interactDistance: 20,        
             orientation: { rows: 4, columns: 3 },
             // LOCK: use ONLY the 4th row (index 3) for every direction/state
             down: { row: 0, start: 0, columns: 3 },
@@ -574,6 +575,7 @@ class GameLevelOutside {
             src: sprite_src_closet,
             SCALE_FACTOR: 6,
             ANIMATION_RATE: 40,
+            interactDistance: 20, // Reduce interaction distance
             pixels: { width: 895, height: 895 },
             INIT_POSITION: { x: 250/1667 * width, y: 420/1137 * height },
             orientation: { rows: 1, columns: 1 },
@@ -656,7 +658,7 @@ class GameLevelOutside {
                 { x: 506/1110*width, y: 327/760*height }
             ],
             // Optional: Add visual properties if you want to render the barrier
-            visible: true,
+            visible: false,
             color: '#8B4513',  // Brown color for wooden barrier
             lineWidth: 5        // Line thickness for visual representation
         };
@@ -679,7 +681,7 @@ class GameLevelOutside {
                 { x: (1110-506)/1110*width, y: 327/760*height }
             ],
             // Optional: Add visual properties if you want to render the barrier
-            visible: true,
+            visible: false,
             color: '#8B4513',  // Brown color for wooden barrier
             lineWidth: 5        // Line thickness for visual representation
         };
@@ -687,9 +689,9 @@ class GameLevelOutside {
         this.classes = [
             { class: GameEnvBackground, data: image_data_floor },
             { class: Player, data: sprite_data_mc },
-            { class: StrictNpc, data: sprite_data_darkKnight },
-            { class: StrictNpc, data: sir_morty_data },
-            { class: StrictNpc, data: sprite_data_closet },
+            { class: Npc, data: sprite_data_darkKnight },
+            { class: Npc, data: sir_morty_data },
+            { class: Npc, data: sprite_data_closet },
             { class: SpriteSheetCoin, data: gem_data },
             { class: SplineBarrier, data: left_wall },
             { class: SplineBarrier, data: right_wall }
